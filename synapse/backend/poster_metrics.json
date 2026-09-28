@@ -1,0 +1,50 @@
+{
+  "base_url": "http://localhost:8000",
+  "static_specs": {
+    "emotion_classes": 7,
+    "emotion_labels": [
+      "happy",
+      "sad",
+      "angry",
+      "fear",
+      "disgust",
+      "surprise",
+      "neutral"
+    ],
+    "roles": 4,
+    "role_labels": [
+      "student",
+      "teacher",
+      "send_officer",
+      "caregiver"
+    ],
+    "assessment_phases": 6,
+    "languages": 2,
+    "language_labels": [
+      "English",
+      "Arabic"
+    ],
+    "sdgs": [
+      3,
+      4,
+      10
+    ],
+    "aac_board_design": "16 cards (4 core + emotion + topic sets)"
+  },
+  "database": {
+    "sessions": 79,
+    "emotion_logs": 141,
+    "card_selections": 119,
+    "assessments": 0,
+    "children": 4,
+    "users_by_role": {
+      "caregiver": 1,
+      "send_officer": 1,
+      "student": 3,
+      "teacher": 2
+    }
+  },
+  "api_benchmarks": {
+    "error": "backend offline \u2014 start uvicorn first"
+  }
+}

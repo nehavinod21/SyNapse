@@ -1,0 +1,47 @@
+endpoint_path,http_method,router_module,has_test,test_passed,test_file,notes
+/auth/register,POST,routers.auth_router,False,False,,3 test file(s) discovered
+/auth/login,POST,routers.auth_router,True,False,tests\test_auth.py,
+/auth/me,GET,routers.auth_router,True,False,tests\test_auth.py,
+/api/children/,POST,routers.children_router,False,False,,3 test file(s) discovered
+/api/children/,GET,routers.children_router,False,False,,3 test file(s) discovered
+/api/children/{id},GET,routers.children_router,False,False,,3 test file(s) discovered
+/api/children/{id},PUT,routers.children_router,False,False,,3 test file(s) discovered
+/api/sessions/start,POST,routers.sessions_router,True,False,tests\test_rbac.py,
+/api/sessions/{id}/end,POST,routers.sessions_router,False,False,,3 test file(s) discovered
+/api/sessions/{id},GET,routers.sessions_router,False,False,,3 test file(s) discovered
+/api/sessions/child/{cid},GET,routers.sessions_router,False,False,,3 test file(s) discovered
+/api/sessions/{id}/insights,GET,routers.sessions_router,False,False,,3 test file(s) discovered
+/api/emotion/detect,POST,routers.emotion_router,False,False,,3 test file(s) discovered
+/api/cards/generate,POST,routers.cards_router,False,False,,3 test file(s) discovered
+/api/cards/select,POST,routers.cards_router,False,False,,3 test file(s) discovered
+/api/assessments/,POST,routers.assessment_router,False,False,,3 test file(s) discovered
+/api/assessments/,GET,routers.assessment_router,False,False,,3 test file(s) discovered
+/api/assessments/{id},GET,routers.assessment_router,False,False,,3 test file(s) discovered
+/api/assessments/{id}/phase,PUT,routers.assessment_router,False,False,,3 test file(s) discovered
+/api/assessments/{id}/complete,POST,routers.assessment_router,False,False,,3 test file(s) discovered
+/api/assessments/referral/{id},GET,routers.assessment_router,False,False,,3 test file(s) discovered
+/api/reports/khda-school-report,GET,routers.reports_router,False,False,,3 test file(s) discovered
+/api/reports/child/{child_id}/khda-send/generate,POST,routers.reports_router,False,False,,3 test file(s) discovered
+/api/reports/child/{child_id}/khda-send/view,GET,routers.reports_router,False,False,,3 test file(s) discovered
+/api/reports/{assessment_id},GET,routers.reports_router,False,False,,3 test file(s) discovered
+/api/reports/child/{child_id}/history,GET,routers.reports_router,False,False,,3 test file(s) discovered
+/api/reports/session/{session_id}/generate-report,POST,routers.reports_router,False,False,,3 test file(s) discovered
+/api/reports/session/{session_id}/generate-pdf,POST,routers.reports_router,False,False,,3 test file(s) discovered
+/api/send/dashboard/summary,GET,routers.send_router,False,False,,3 test file(s) discovered
+/api/send/dashboard/recent-interactions,GET,routers.send_router,False,False,,3 test file(s) discovered
+/teacher/dashboard/summary,GET,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/students/{child_id}/profile,GET,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/sessions/{session_id}/live,GET,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/sessions/{session_id}/pause,POST,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/sessions/{session_id}/next-turn,POST,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/sessions/{session_id}/end,POST,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/sessions/{session_id}/guidance/{guidance_id}/use,POST,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/sessions/{session_id}/guidance/{guidance_id}/dismiss,POST,routers.teacher_router,False,False,,3 test file(s) discovered
+/teacher/sessions/{session_id}/message,POST,routers.teacher_router,False,False,,3 test file(s) discovered
+/api/alerts/,GET,routers.alerts_router,False,False,,3 test file(s) discovered
+/api/alerts/{alert_id}/acknowledge,POST,routers.alerts_router,False,False,,3 test file(s) discovered
+/api/support/chat,POST,routers.support_router,False,False,,3 test file(s) discovered
+/,GET,main,False,False,,3 test file(s) discovered
+/health,GET,main,False,False,,3 test file(s) discovered
+/ws/session/{session_id},WEBSOCKET,main,False,False,,3 test file(s) discovered
+/ws/alerts,WEBSOCKET,main,False,False,,3 test file(s) discovered

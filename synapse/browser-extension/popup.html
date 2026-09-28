@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        width: 280px;
+        padding: 12px;
+        margin: 0;
+        color: #1e2d26;
+      }
+      h1 {
+        font-size: 14px;
+        margin: 0 0 8px;
+      }
+      p {
+        font-size: 12px;
+        color: #5a6a60;
+        line-height: 1.4;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SyNAPSE Monitor</h1>
+    <p>Checks emotion every <strong>6 minutes</strong> when a student AAC session is open. Alerts teachers (school) or caregivers (home) on sad, angry, fear, or disgust.</p>
+    <label>
+      <input type="checkbox" id="enabled" checked />
+      Background monitoring on
+    </label>
+    <script src="popup.js"></script>
+  </body>
+</html>

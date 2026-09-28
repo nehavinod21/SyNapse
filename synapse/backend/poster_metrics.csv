@@ -1,0 +1,10 @@
+Metric,Value,Unit,How measured
+Emotion classes,7,count,DeepFace model
+AAC board size,16,cards,POST /api/cards/generate
+Roles,4,count,"student, teacher, send_officer, caregiver"
+Assessment phases,6,count,Assessment model
+Languages,2,count,EN + AR labels
+SDGs,"3, 4, 10",ids,Project alignment
+DB sessions (seed data),79,count,sqlite synapse.db
+DB emotion logs,141,count,
+DB card selections,119,count,

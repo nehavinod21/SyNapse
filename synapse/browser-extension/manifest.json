@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "SyNAPSE Emotion Monitor",
+  "version": "1.0.0",
+  "description": "Background emotion checks every 6 minutes for SyNAPSE AAC sessions (UAE schools).",
+  "permissions": ["alarms", "notifications", "storage"],
+  "host_permissions": [
+    "http://localhost:5173/*",
+    "http://localhost:8000/*",
+    "https://*.vercel.app/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:5173/*",
+        "https://*.vercel.app/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "SyNAPSE Monitor",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
