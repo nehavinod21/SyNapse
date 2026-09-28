@@ -1,7 +1,0 @@
-{
-  "name": "synapse-icamac-paper",
-  "private": true,
-  "dependencies": {
-    "docx": "^9.5.0"
-  }
-}
